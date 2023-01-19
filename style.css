@@ -1,3 +1,10 @@
 body {
-
+h1 {
+  text-align: center;
+  color: #C98686;
+  font-style: oblique;
+}
+body {
+  background-color: #FFF4EC;
+}
 }
