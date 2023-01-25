@@ -12,8 +12,12 @@
 <img src="Personal artifact Web Design.png" width="500" height="600">
   
 
-
-
+<nav>
+        <li><a href="noun.html"> Noun: Analyzing My Music </li>
+        <li><a href="index.html"> Home </li>
+      
+      </nav>
+</body>
 </html>
 
 <style>
@@ -27,4 +31,37 @@ body {
   background-color: #FFF4EC;
 }
 
+
+
+
+nav {
+  list-style-type: none;
+  background-color: #CF8BA9;
+  width: 100%;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+.navli {
+  float: right;
+}
+
+.navli a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 14px 50px;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #EBD6E7;
+}
+.active {
+  background-color: #B15E6C;
+}
   </style>
