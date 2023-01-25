@@ -1,37 +1,42 @@
     <nav>
-      <li><a href="index.html"> Home </li>
-      <li><a href="noun.html"> Noun: Analyzing My Music </li>
+        <li><a href="noun.html"> Noun: Analyzing My Music </li>
+        <li><a href="index.html"> Home </li>
       
       </nav>
 
-<style>
-ul {
+
+
+
+nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #CF8BA9;
-  position: fixed;
-  top: 0;
   width: 100%;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
+  top: 0;
+  margin: 0;
 }
 
-li {
-  display: inline;
-  float: left;
+.navli {
+  float: right;
 }
 
-li, a {
+.navli a {
   display: block;
   color: black;
-  text-align: center;
-  padding: 14px 16px;
+  text-decoration: none;
+  padding: 14px 50px;
 }
-li, a:hover:not(.active) {
+
+.navli a:hover:not(.active) {
   background-color: #EBD6E7;
 }
 .active {
   background-color: #B15E6C;
 }
-    </style>
-
+li {
+  list-style-position: inside;
+}
