@@ -1,11 +1,61 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> MyMusic </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
     <nav>
-        <li><a href="noun.html"> Noun: Analyzing My Music </li>
-        <li><a href="index.html"> Home </li>
-      
+     <li class="navli"><a href="noun.html"> Music </a> </li>
+      <li class="navli"><a href="mynoun.html"> Analyzing my Music </a> </li>  
+   <li class="navli"><a href="index.html"> About me </a> </li> 
       </nav>
+  <br>
+    <center>
+  <h1> I love music </h1>
+  </center>
+  <p> Music <br>
+    noun- vocal or instrumental sounds (or both) combined in such a way 
+<br> as to produce beauty of form, harmony, and expression of emotion. </p>
+    <br>
+  <t> Artists </t>
+  <br><br>
+  <table>
+    <tr>
+      <td> Artist </td>
+      <td> Songs </td>
+      <td> Wins </td>
+      </tr>
+    <tr>
+      <td> Beyonce </td>
+      <td> <ul> <li class="tableli"> Single Ladies </li>
+       <li class="tableli"> Halo </li>
+     <li class="tableli"> If I were a boy </li> </ul> </td>
+      <td> 28 awards </td>
+      </tr>
+     <tr>
+      <td> Ariana Grande </td>
+      <td> <ul> <li class="tableli"> Santa Tell Me </li>
+       <li class="tableli"> Side to Side </li>
+     <li class="tableli"> 7 Rings </li> </ul> </td>
+      <td> 8 awards </td>
+      </tr>
+     <tr>
+      <td> Billie Eilish </td>
+      <td> <ul> <li class="tableli"> Lovely </li>
+    <li class="tableli"> Bad Guy </li>
+      <li class="tableli"> everything i wanted </li> </ul> </td>
+      <td> 10 awards </td>
+      </tr>
+    
+  </table>
+  <br><br><br>
+</body>
+</html> 
 
 
-
+<style>
 
 nav {
   list-style-type: none;
@@ -21,14 +71,17 @@ nav {
 }
 
 .navli {
+  display: inline;
   float: right;
+  margin-left: 2%;
 }
 
 .navli a {
   display: block;
   color: black;
+  text-align: center;
   text-decoration: none;
-  padding: 14px 50px;
+  padding: 15px 6px;
 }
 
 .navli a:hover:not(.active) {
@@ -37,6 +90,58 @@ nav {
 .active {
   background-color: #B15E6C;
 }
+
 li {
   list-style-position: inside;
 }
+
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+}
+ tp {
+  list-style-type: circle;
+}
+
+p {
+  font-weight: bold;
+   font-size: 150%;
+  margin-left: 25%;
+} 
+
+t {
+  font-weight: bold;
+   font-size: 150%;
+  margin-left: 48%;
+} 
+
+table, tr, th, td, tp {
+  border: dotted #8E9AAF 4px;
+}
+.tableli {
+  margin-left: 0;
+  list-style-position: inside;
+}
+  
+  td, th {
+    text-align: center;
+    padding: 10px;
+  }
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 24%;  
+}
+body {
+  background-color: #DEE2FF;
+  margin: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #FEEAFA;
+}
+tr:hover{
+  background-color: #EFD3D7;
+}
+</style>
