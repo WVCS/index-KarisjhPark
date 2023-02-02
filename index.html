@@ -8,12 +8,9 @@
   <body>
   <nav>
     <ul>
-       <li><a href="index.html">Home</a></li>
-    <li>
-    <a href="noun.html"> *Noun Pages* </a>
-    <ul class="dropdown">
-      <li><a href="noun.html"> Music </a></li>
-      <li><a href="mynoun.html"> My Music </a></li>
+  <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="noun.html"> Noun Page</a>
+  </li>
 </ul> 
       </nav>
    
@@ -40,46 +37,29 @@
   margin: 0;
 }
 
-ul li {
+li {
   display: inline;
   float: right;
-  margin-left: 2%;
+  margin-left: 6%;
 }
 
-ul li a {
-  display: inline-block;
+li a {
+  display: block;
   color: black;
   text-align: center;
   text-decoration: none;
-  padding: 15px 6px;
+  padding: 15px 14px;
 }
 
-li a hover:not(.active) {
+li a :hover:not(.active) {
   background-color: #EBD6E7;
 }
 .active {
   background-color: #B15E6C;
 }
 
-
-ul li ul.dropdown {
-  width: 100%
-  background: #EBD6E7;
-  position: absolute;
-  z-index: 999;
-  display: none;
-}
-
-ul li ul.dropdown li {
-  display: inline-block;
-}
-
-ul li a:hover {
-background-color: #DBBADD;
-}
-
-ul li:hover ul.dropdown {
-  display: block;
+li {
+  list-style-position: inside;;
 }
 
 
@@ -94,4 +74,5 @@ h1 {
   text-shadow: 2px 2px 4px #B7DAF6;
   font-style: oblique;
 }
+
 </style>
