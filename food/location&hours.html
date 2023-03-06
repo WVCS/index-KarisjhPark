@@ -1,1 +1,160 @@
+<html>
+<head>
+  <title> Croffle World </title>
+  <link rel="icon" type="image/x-icon" href="food/Icon C r o f f l e W O R L D (1).png">
+  </head>
+  
+  <body>
+  <nav>
+    <li class= "navli"><a href="index.html"><img scr="food/Icon C r o f f l e W O R L D (1).png" style="width:30px;height:30px;"></a></li>
+    <li class="navli"><a class="active" href="food/location&hours.html"> Location & hours</a></li>
+    <li class="navli"><a href="food/menu.html"> Menu</a></li>
+    <li class="navli"><a href="index.html">Other websites</a></li>
+      </nav>
+    <br>
+     
+    <div class="location">
+      <div class="where"> <p>Find a cafe near you!
+        <ul style="list-style-type:circle; line-height:140%;">
+    <li> In your dreams</li>
+    <li> In my own little world </li>
+    <li> Somewhere in the far future </li> </ul></p></div>
+           <div class="map">  
+        <p>Enjoy the best cup of coffee and a croffle whenever you get a chance.</p><center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.63921547733!2d-117.65201058550079!3d33.45870495622251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcf16471044cf9%3A0xd7e5183511792872!2sRapport%20Coffee%20by%20Cafe%20Smith!5e0!3m2!1sen!2sus!4v1677475141919!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center></div>
+      <div class="Tele"> <h1>Call us at 010-345-6789</h1></div>
+      <br></div>
+  
+    
+        <br><br><br><br><div class="hours">
+      <div class="times"> 
+        <p> Opening Hours
+    <ul id="whatiscroffletext" style="list-style-type:circle; line-height:140%;">
+    <li>Monday Open 10:00AM - 9:00PM</li>
+    <li>Tuesday Open 10:00AM - 9:00PM </li>
+    <li> Wednesday Open 10:00AM - 9:00PM </li>
+        <li> Thursday Open 10:00AM - 9:00PM </li>
+          <li> Friday Open 10:00AM - 9:00PM </li>
+      <li> Saturday Open 10:00AM - 9:00PM </li>
+        </ul></p></div>
+      <div class="closed"><h1> Closed on Sundays!</h1></div><div class="logo"><img id="logoimg" scr="food/Icon C r o f f l e W O R L D (1).png" style="width:60px;height:60px;"></div>
+      </div>
+  </body>
+  </html>
+ <style>
+   nav {
+  list-style-type: none;
+  background-color: #F1E3D3;
+  width: 100%;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
+  top: 0;
+  margin: 0;
+  height: 51px;
+}
 
+.navli {
+  display: inline;
+  float: left;
+  margin-left: 2%;
+}
+
+
+.navli a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+  font-weight: bold;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #F2DABE;
+}
+.active {
+  background-color: #F2D0A9;
+}
+body {
+  background-color: #D88C9A;
+  margin: 0%;
+}
+p, li {
+  font-size: large;
+  margin-left: 22%;
+  font-size: 110%;
+}
+
+p {
+  font-weight: bold;
+  }
+#whatiscroffletext {
+  margin-left: 2%;
+  font-variant-caps: titling-caps;
+}
+h1 {
+  text-align: center;
+  font-style: oblique;
+  left: 16%;
+}
+.location {
+  background-color:#E5AEA2;
+  display: inline-grid;
+  grid-template:
+    "where map" auto
+    "Tele";
+  grid-row-gap: 3%;
+  float: left;
+  margin-left: 6%;
+  height: 800px;
+  width: 900px;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+.where{
+  grid-row: 1/2;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+.map{
+  grid-row: 2/3;
+}
+.Tele{
+  grid-row: 3/4;
+  border: dashed 2px antiquewhite;
+  border-radius: 16px;
+}
+.Tele:hover {
+  border: dotted #F1E3D3 12px;
+}
+.hours {
+  background-color:#E5AEA2;
+  display: inline-grid;
+  grid-template:
+    "time" auto
+    "closed";
+  grid-row-gap: 3%;
+  grid-column-gap: 15px;
+  float: right;
+  margin-right: 8%;
+  height: 300px;
+  width: 600px;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+.times{
+  grid-area: 1/1/1/3;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+.closed{
+  grid-area: 2/1/3/2;
+  margin-left: 21%;
+}
+.logo{
+  grid-area: 2/2/3/3;
+  margin-left: 4%;
+}
+   </style>
