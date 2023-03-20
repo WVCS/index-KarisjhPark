@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Wishing on a star </title>
+  <link rel="icon" type="image/x-
+icon"href="Wishing on a star.png">
+</head>
+<body>
+    <nav>
+     <li class="navli"><a class="active" href="Wishing on a star event.html"><img src="wishing on a star event ad.png" style="width:17px;height:17px;"></a> </li>
+      <li class="navli"><a href="../index.html"> Other Websites </a></li> 
+      </nav><br><br>
+  <center>
+  <div class="allpages">
+    <div id="background"> <a class="b" href="origin.html"><br> How it came to be</a></div>
+      <div id="about"> <a class="b" href="abouttheevent.html"> <br>The Event </a></div>
+    <div id="why"><a class="b" href="whymay6.html"> <br> Why May 6th? </a></div>
+       <div id="wishing"><a class="b" href="https://www.wikihow.com/Wish-on-a-Star"><br>How to wish on a star</a></div>
+          </center></body>
+  </html>
+   <style>
+     nav {
+  list-style-type: none;
+  background-color: #1E2749;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari*/
+  position: sticky;
+  top: 0;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
 
+.navli {
+  display: inline;
+  float: left;
+  margin-left: 2%;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #324286;
+}
+.active {
+  background-color: #273469;
+}
+p, li{
+  font-weight: bold;
+   font-size: 110%;
+  margin-left: 10%;
+  color: white;
+} 
+.b {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3vw;
+  font-style: oblique;
+  color: white;
+  text-decoration: none;
+}
+.b:hover{
+  text-decoration: underline;
+  color: #FEEAFA;
+}
+body {
+  margin: 0%;
+  background-image: url("https://cdn.theatlantic.com/thumbor/wxitU7HiKaRDjAYlYL-hdzViXAE=/0x141:2781x1705/976x549/media/img/mt/2015/10/Cygnus_v3_BandW/original.jpg");
+}
+.allpages{
+  display: grid;
+  grid-template:
+    "background about"auto
+    "why wishing";
+  grid-row-gap: 8%;
+  grid-column-gap: 5vw;
+  height: 25vw;
+  width: 67vw;
+}
+#background:hover{
+  background-image: url("https://i.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.webp");
+}
+#background{
+  grid-area: 1/1/2/2;
+ border: 7px outset #5F4B66;
+  border-radius: 10px;
+  min-width: 30vw;
+    max-width: 30vw;
+}
+#about:hover{
+  background-image: url("https://i.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.webp");
+}
+#about{
+  grid-area: 1/2/2/3;
+border: 7px outset #A7ADC6;
+  border-radius: 10px;
+   min-width: 30vw;
+    max-width: 30vw;
+}
+#why:hover{
+  background-image: url("https://i.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.webp");
+}
+#why{
+  grid-area: 2/1/3/2;
+  border: 7px outset #8797AF;
+  border-radius: 10px;
+   min-width: 30vw;
+    max-width: 30vw;
+}
+#wishing:hover{
+  background-image: url("https://i.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.webp");
+}
+#wishing{
+  grid-area: 2/2/3/3;
+  border: 7px outset #56667A;
+  border-radius: 10px;
+   min-width: 30vw;
+    max-width: 30vw;
+}
+@media only screen and (max-width: 1024px) {
+  nav {
+  background-color: #56667A;
+  }
+.navli a:hover:not(.active) {
+  background-color: #9DABBE;
+}
+.active {
+  background-color: #8797AF;
+}
+  .allpages{
+    display: flex;
+    flex-direction: column;
+    width:92%;
+    height: 29vw;
+  }
+  #background{
+    min-height: 12vw;
+    min-width: 70vw;
+    max-width: 90vw;
+    border: 5px outset #FAFAFF;
+  }
+ 
+  #about{
+    min-height: 12vw;
+    min-width: 70vw;
+    max-width: 90vw;
+    border: 5px outset #E4D9FF;
+  }
+  #why{
+    min-height: 12vw;
+    min-width: 70vw;
+    max-width: 90vw;
+    border: 5px outset #273469;
+  }
+  #wishing{
+    min-height: 12vw;
+    min-width: 70vw;
+    max-width: 90vw;
+    border: 5px outset #1E2749;
+  }
+  .b{
+  font-size: 4vw;
+  }
+}
+     </style>
