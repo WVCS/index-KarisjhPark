@@ -1,0 +1,118 @@
+<html>
+<head>
+  <title> Ski </title>
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/481/481417.png">
+  </head>
+  
+  <body>
+  <nav>
+    <li class= "navli"><a href="ski.html"><img src="https://cdn-icons-png.flaticon.com/512/3706/3706541.png" style="width:30px;height:30px;"></a></li>
+    <li class="navli"><a href="skiteam.html"> Our team</a></li>
+    <li class="navli"><a class="active" href="findski.html"> Where to find us!</a></li>
+    <li class="navli"><a href="../index.html">Other websites</a></li>
+      </nav><br><br>
+    <center>
+    <div class="location">
+                 <div class="address"> <h1>Find us at 13500 Wolverine Way</h1></div>
+      <div class="map">  
+        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.390749437034!2d-117.15302436945947!3d32.96709122054458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf82042e0ec05%3A0x33d470abd0dd807c!2sWestview%20High%20School!5e0!3m2!1sen!2sus!4v1679677430035!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center></div>
+      <br><div class="mailing"> 
+        <h1>Join our Mailing List!!</h1><br>
+          <h1><form action="/action_page.php">
+  <label for="fname">Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Email:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+            <label for="fname">Address:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+            
+</form></h1></div>
+      </div></center>
+      
+      </body></html>
+<style>
+  nav {
+  list-style-type: none;
+  background-color: #84B1EB;
+  width: 100%;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
+  top: 0;
+  margin: 0;
+  height: 51px;
+}
+
+.navli {
+  display: inline;
+  float: left;
+  margin-left: 2%;
+}
+
+
+.navli a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+  font-weight: bold;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #B9D1F3;
+}
+.active {
+  background-color: #A8C6F0;
+}
+body {
+  background-color: #CBDDF6;
+  margin: 0%;
+}
+p, li {
+  font-size: large;
+  margin-left: 22%;
+  font-size: 110%;
+}
+
+p {
+  font-weight: bold;
+  }
+h1 {
+  text-align: center;
+  font-style: oblique;
+  color: white;
+}
+.location {
+  background-color:#73A4E7;
+  display: inline-grid;
+  grid-template:
+    "address map" auto
+    "mailing";
+  grid-row-gap: 3%;
+  height: 53vw;
+  width: 50vw;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+.
+.map{
+  grid-row:2/3;
+}
+.address{
+  grid-row: 1/2;
+  border: dashed 2px antiquewhite;
+  border-radius: 16px;
+}
+.address:hover {
+  border: dotted #F1E3D3 12px;
+}
+.mailing{
+  grid-row: 3/4;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+  </style>
