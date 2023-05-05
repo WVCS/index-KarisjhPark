@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Once upon a fairytale </title>
+  <link rel="icon" type="image/x-
+icon"href="Fairy taled.png">
+</head>
+<body>
+   <nav>
+       <li class="navli"><a href="fairytale.html"> Once Upon a Fairy Tale</a></li>
+      <li class="navli"><a  href="fairytaleprice.html">
+       $</a> </li>
+      <li class="navli"><a href="fairytaleloc.html">
+       Location</a> </li>
+      <li class="navli"><a class="active" href="fairytalefaq">
+       FAQ</a></li>
+      <li class="navli"><a href="../index.html"> Other Websites </a></li> 
+      </nav><br><br><br>
+  <center><div class="Aboutthefounder">
+      <h1> FREQUENTLY ASKED QUESTIONS!</h1><div class="how"> <h1>What makes Once Upon a Fairy Tale so special?<br></h1>
+        <h2>Our Park was founded once upon a time and has only grew since it was founded. The park founder had a love for the nature and fairy tales which is what inspired her to base the park on.
+      </h2></div>
+    <div class="belief"><h1> How do I get there?<br></h1> <h2> We are a bit tricky to find! Go to our location page for our exact location. Make sure to turn down the dark alley and go straight through that wall covered in moss and flowers!!</h2></div>  
+      <div class="what"><h1> How do I get the most out of my trip?<br></h1><h2> I would recommend that you come prepared for unexpected turns and twists! We have had suprise showers, strong huffs, and lost slippers. I would also like to mention that our gardens are worth the trip to our park! We have a wide variety of shrubs and sorts.</h2></div>
+      <div class="us"><h1> Do you guys actually have fairies?</h1> <h2>We do have some fairies flying around the park but they tend to be shy around humans. They can sometimes be spotted in the field of daisies or near a mushroom patch!</h2></div>
+      <div class="FAQ"><h1>When is it best to visit? 
+        <br></h1><h2> When there is a rainbow in the sky is when our park thrives! I also would not recommend visiting when fairygrandmother is not in a good mood or when we are having our yearly magic clean-outs. Things tend to get HECTIC that time of year.</h2></div><br>
+      </div><button onclick="topFunction()" id="topbutton"> To the top ⤴ </button>
+      </body>
+  </html>
+  <style>
+  nav {
+  list-style-type: none;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align:center;  
+}
+
+.navli {
+  display: inline-block;
+}
+
+.navli a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 17px 17px;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #C6D2ED;
+}
+.active {
+  background-color: #D3D0F0;
+}
+p, li{
+  font-weight: bold;
+   font-size: 160%;
+  color: black;
+} 
+body{
+  background-color: #E7E6F7;
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+  font-variant-caps: titling-caps;
+}
+h2 {
+  text-align: center;
+  font-variant-caps: titling-caps;
+}
+#topbutton{
+  position: fixed;
+  bottom: 4%;
+  right: 1.5%;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 5px;
+  border: dashed pink 6px;
+  padding:8px;
+  display: none;
+}
+#topbutton:hover{
+font-size: 20px;
+border: dashed pink 10px;
+}
+div{
+  background-color: #E3D0D8;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+  padding: 2px 19px;
+  min-width: 90%;
+}
+.Aboutthefounder {
+  display: inline-grid;
+  height: 70vw;
+  width: 80%;
+  grid-template:
+    "how belief what" auto
+    "us FAQ";
+  grid-row-gap: 2%;
+  grid-column-gap: 15px;
+  background-color: #C6D2ED;
+}
+@media only screen and (max-width: 1524px) {
+  .Aboutthefounder {
+  display: inline-grid;
+  height: 310vh;
+  width: 80%;
+  }
+}
+</style>
