@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Once upon a fairytale </title>
+  <link rel="icon" type="image/x-
+icon"href="Fairy taled.png">
+</head>
+<body>
+   <nav>
+       <li class="navli"><a href="fairytale.html"> Once Upon a Fairy Tale</a></li>
+      <li class="navli"><a  href="fairytaleprice.html">
+       $</a> </li>
+      <li class="navli"><a class="active" href="fairytaleloc.html">
+       Location</a> </li>
+      <li class="navli"><a href="fairytalefaq">
+       FAQ</a></li>
+      <li class="navli"><a href="../index.html"> Other Websites </a></li> 
+      </nav><br><br><br>
+  
+ <center><div class="location">
+      <center><div class="where"> <p>Find our other locations ~
+        <ul style="list-style-type:circle; line-height:140%;">
+    <li> Once upon a time</li>
+    <li> A long time ago </li>
+    <li> Happily ever after </li> </ul></p></div>
+           <div class="map">  
+        <p>Come visit us at ↓</p><center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.843930815642!2d-121.29466952410432!3d38.69842911104375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809adfbc38a6e955%3A0x6687abb2a93fab28!2sFairytale%20St%2C%20Citrus%20Heights%2C%20CA%2095621!5e0!3m2!1sen!2sus!4v1683061532141!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center></div><br>
+      <div class="Tele"> <h1> Why not?
+        </h1>
+          <form onsubmit="alert('A little gift is on your way from fairygrandmother🪄~')"> 
+  <div class="container">
+  </div>
+
+  <div class="container">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> I am a human
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Bibbidi Bobbidi Boo">
+  </div>
+</form>
+        </div> </center>
+      <br></div>
+<div class="hours">
+      <center><div class="times"> 
+        <p> Opening Hours
+    <ul id="whatiscroffletext" style="list-style-type:circle; line-height:140%;">
+    <li>Monday 10:00AM - 100PM</li>
+    <li>Tuesday 10:00AM - 9:00PM </li>
+    <li> Wednesday 10:00AM - 9:00PM </li>
+        <li> Thursday 10:00AM - 9:00PM </li>
+          <li> Friday 10:00AM - 9:00PM </li>
+      <li> Saturday 10:00AM - 9:00PM </li>
+        </ul></p></div>
+  <div class="closed"><h1> Closed every once in a while</h1></div></center>
+<div class="logo"><img src="Fairy taled.png" style="width:100%;"></div></div>
+      </div>
+  </body>
+  </html>
+  
+  <style>
+  nav {
+  list-style-type: none;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align:center;  
+}
+
+.navli {
+  display: inline-block;
+}
+
+.navli a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 17px 17px;
+  font-size: 160%;
+   font-weight: bold;
+}
+
+.navli a:hover:not(.active) {
+  background-color: #C6D2ED;
+}
+.active {
+  background-color: #D3D0F0;
+}
+h2{
+  font-weight: bold;
+
+  color: black;
+} 
+body{
+  background-color: #E7E6F7;
+  font-family: Verdana, sans-serif;
+}
+p, li {
+  font-size: large;
+  font-size: 110%;
+}
+
+p {
+  font-weight: bold;
+  }
+#whatiscroffletext {
+  margin-left: 2%;
+  font-variant-caps: titling-caps;
+}
+h1 {
+  text-align: center;
+  font-style: oblique;
+  left: 19%;
+}
+.location {
+  background-color:#E3D0D8;
+  display: inline-grid;
+  grid-template:
+    "where map" auto
+    "Tele";
+  grid-row-gap: 3%;
+  height: 51.5vw;
+  width: 50vw;
+  border: dashed 2px #F7F2F4;
+  border-radius: 10px;
+}
+.where{
+  grid-row: 1/2;
+  border: dashed 2px #F7F2F4;
+  border-radius: 10px;
+}
+.map{
+  grid-row: 2/3;
+}
+.Tele{
+  grid-row: 3/4;
+  border: dashed 2px antiquewhite;
+  border-radius: 16px;
+}
+.Tele:hover {
+  border: dotted #F1E3D3 12px;
+}
+
+
+.container {
+  padding: 3px 79px;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.hours {
+  background-color:#E3D0D8;
+  display: inline-grid;
+  grid-template:
+    "time" auto
+    "closed logo";
+  grid-row-gap: 3%;
+  grid-column-gap: 15px;
+  height: 16vw;
+  width: 35vw;
+  border: dashed 2px #F7F2F4;
+  border-radius: 10px;
+}
+.times{
+  grid-area: 1/1/1/3;
+  border: dashed 2px #F7F2F4;
+  border-radius: 10px;
+}
+.closed{
+  grid-area: 2/1/3/2;
+}
+.logo{
+  grid-area:3/1/4/2;
+  max-width:35vw;
+}
+
+  @media only screen and (max-width: 1324px) {
+    .location {
+  background-color:#E3D0D8;
+  display: inline-grid;
+  grid-template:
+    "where map" auto
+    "Tele";
+  grid-row-gap: 3%;
+  height: 77vw;
+  width: 80%;
+  border: dashed 2px #F7F2F4;
+  border-radius: 10px;
+}
+    .hours {
+  background-color:#E3D0D8;
+  display: inline-grid;
+  grid-template:
+    "time" auto
+    "closed logo";
+  grid-row-gap: 3%;
+  grid-column-gap: 15px;
+  height: 290px;
+  width: 80%;
+  border: dashed 2px #F7F2F4;
+  border-radius: 10px;
+}
+    .logo{
+  grid-area:3/1/4/2;
+  width: 0%;
+}
+}
+    
+  </style>
