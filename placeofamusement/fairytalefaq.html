@@ -117,3 +117,19 @@ div{
   }
 }
 </style>
+  <script>
+    window.onscroll = function() {hidefunction()};
+
+function hidefunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop >90)
+    document.getElementById("topbutton").style.display="block";   
+else{
+  document.getElementById("topbutton").style.display="none";   
+}
+}
+
+function topFunction(){
+  document.body.scrollTop=0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
