@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Your Dream </title>
+  <link rel="icon" type="image/x-
+icon"href="Dream store (1).png">
+</head>
+<body>
+   <nav> <div id="hellodivy">
+  <form class="search" autocomplete="off" action="">
+    <li class="finishmysentence">
+      <input id="myInput" type="text" name="box" placeholder="Search...">
+      </li>
+    </form></div>
+     <div class="icon-cart" style="float: left">
+    <div class="cart-line-1" style="background-color: #E5E9EA"></div>
+    <div class="cart-line-2" style="background-color: #E5E9EA"></div>
+    <div class="cart-line-3" style="background-color: #E5E9EA"></div>
+    <div class="cart-wheel" style="background-color: #E5E9EA"></div>
+  </div><br>
+      
+      <li class="navli"><a href="dreamaccount.html">
+       Account</a> </li>
+      <li class="navli"><a href="shopdream.html">
+       Shop</a></li>
+      <li class="navli"><a href="../index.html"> Other Websites </a></li>  
+      </nav><br><br><br><br>
+  <div class="alert">
+    <center><span class="alertclosebutton" onclick="this.parentElement.style.display='none';">&times;</span> Hey! It seems you do not have an account with us yet. </div></center>
+<center><h1> Sign Up!
+        </h1></center>
+          <form onsubmit="alert('It seems that there was an error in the system! Try again later.')"> 
+
+  <center><div class="container" style="
+  font-family: Garamond, serif; color: white;"">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Address" name="mail" required>    
+   <input type = "text"  placeholder="User ID" name = "user_id" >
+  <input type = "password" placeholder="Password" name = "password" required>
+    <label>
+      <input type="checkbox" name="subscribe"> Keep me signed in
+    </label>
+  <br><br>By creating an account, you agree to our Privacy Policy and Terms & Conditions
+</div>
+
+  <div class="container">
+    <input type="submit" value="Create Account">
+  </div>
+</form>
+        </div> </center></body>
+    </html>
+    <style>
+    
+nav {
+  list-style-type: none;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  top: 0;
+  margin: 0;
+  text-align:center;
+}
+
+.navli {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: Garamond, serif;
+  padding:0px 19px;
+}
+#hellodivy{
+}
+.finishmysentence{
+  cursor: grab;
+  position: relative;
+}
+
+#myInput{
+  width: 850%;
+  height: 36px;
+  background-color:#778DA9;
+  font-family: Garamond, serif;
+}
+.search{
+  float:left;
+  margin-right:70px;
+}
+.icon-cart {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  margin-left:200px;
+}
+
+.icon-cart .cart-line-1 {
+  width: 15%;
+  height: 7%;
+  position: absolute;
+  left: 8%;
+  top: 25%;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg); 
+  background-color: #000;
+  border-bottom-left-radius: 35%;
+}
+
+.icon-cart .cart-line-2 {
+  width: 35%;
+  height: 7%;
+  position: absolute;
+  left: 6%;
+  top: 40%;
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg); 
+  background-color: #000;
+}
+
+.icon-cart .cart-line-2:before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  left: 45%;
+  top: -280%;
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg); 
+  background-color: inherit;
+}
+
+.icon-cart .cart-line-2:after {
+  content: "";
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 59%;
+  top: -670%;
+  background-color: inherit;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg); 
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 25%;
+}
+
+.icon-cart .cart-line-3 {
+  width: 30%;
+  height: 7%;
+  position: absolute;
+  left: 33%;
+  top: 45%;
+  background-color: #000;
+}
+
+.icon-cart .cart-line-3:after {
+  content: "";
+  width: 124%;
+  height: 100%;
+  position: absolute;
+  top: -150%;
+  left: -5%;
+  background-color: inherit;
+}
+
+.icon-cart .cart-wheel {
+  width: 12%;
+  height: 12%;
+  background-color: #000;
+  border-radius: 100%;
+  position: absolute;
+  left: 28%;
+  bottom: 20%;
+}
+
+.icon-cart .cart-wheel:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 100%;
+  position: absolute;
+  left: 200%;
+  bottom: 0;
+}
+
+
+p, li{
+  font-weight: bold;
+   font-size: 160%;
+  margin-left: 80%;
+  color: black;
+} 
+h1{
+  font-family: Garamond, serif; 
+  color: white;
+}
+body {
+  background-color: #1B263B;
+}
+.alert{
+  background-color: #778DA9;
+    padding: 30px;
+}
+.alertclosebutton {
+  float: right;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+}
+.container {
+  padding: 3px 79px;
+  text-color: white;
+}
+
+input[type=text], input[type=password], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1324px) {
+  body{
+    background-color: #415A77;
+  }
+}
+    </style>
