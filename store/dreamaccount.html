@@ -8,10 +8,9 @@ icon"href="Dream store (1).png">
 <body>
    <nav> <div id="hellodivy">
   <form class="search" autocomplete="off" action="">
-    <li class="finishmysentence">
-      <input id="myInput" type="text" name="box" placeholder="Search...">
-      </li>
-    </form></div>
+    <div class="finishmysentence">
+      <input id="myInput" type="" name="box" placeholder="Search...">
+    </form></div></div>
      <div class="icon-cart" style="float: left">
     <div class="cart-line-1" style="background-color: #E5E9EA"></div>
     <div class="cart-line-2" style="background-color: #E5E9EA"></div>
@@ -47,10 +46,8 @@ icon"href="Dream store (1).png">
     <input type="submit" value="Create Account">
   </div>
 </form>
-        </div> </center></body>
-    </html>
+        </div> </center></body></html>
     <style>
-    
 nav {
   list-style-type: none;
   overflow: hidden;
@@ -75,6 +72,7 @@ nav {
   padding:0px 19px;
 }
 #hellodivy{
+  
 }
 .finishmysentence{
   cursor: grab;
@@ -82,21 +80,24 @@ nav {
 }
 
 #myInput{
-  width: 850%;
+  width:20vw ;
   height: 36px;
   background-color:#778DA9;
   font-family: Garamond, serif;
 }
 .search{
+  margin-left:5%;
+  width:20.3vw;
   float:left;
-  margin-right:70px;
+background-color:white;
+  
 }
 .icon-cart {
   width: 48px;
   height: 48px;
   position: relative;
   overflow: hidden;
-  margin-left:200px;
+  margin-left:80px;
 }
 
 .icon-cart .cart-line-1 {
@@ -251,3 +252,90 @@ input[type=submit]:hover {
   }
 }
     </style>
+<script>
+    function autocomplete(inp, arr) {
+
+  var currentFocus;
+
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+
+      this.parentNode.appendChild(a);
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function(e) {
+
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+var autoAnswers = ["short sleeve", "pajama set", "slippers", "eye-masks", "gift set",];
+
+autocomplete(document.getElementById("myInput"), autoAnswers);
+    </script>
