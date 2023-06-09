@@ -2,68 +2,65 @@
 <html lang="en">
 <head>
   <title> MyMusic </title>
-  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3083/3083417.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <nav>
-     <li class="navli"><a href="noun.html"> Music </a> </li>
-      <li class="navli"><a class="active" href="mynoun.html"> Analyzing my Music </a> </li>  
-   <li class="navli"><a href="index.html"> About me </a> </li> 
+    
+    <nav>
+     <li class="navli"><a href="noun.html"> What is music? </a> </li>
+      <li class="navli"><a class="active" href="mynoun.html" style="color: white;"> My music </a> </li>  
+   <li class="navli"><a href="index.html"> Other websites </a> </li> 
       </nav>
   <br>
-  <p> 
-    <img src="https://www.generasia.com/w/images/a/ae/BIBI_-_Gamyeonmudohoe_promo.jpg" style="float:left;width:200px;height: 300px;">  
-    My favorite artists </p> 
-  <ol type="i" style="float:left;line-height:140%;"> 
-    <li> Yerin Baek </li>
-    <ul style="list-style-type:circle; line-height:140%;">
-      <li> kr&b </li>
-      </ul>
-    <li> Bibi </li>
-      <ul style="list-style-type:circle; line-height:140%;">
-        <li> kr&b </li>
-        <li> hiphop </li>
-  </ul>
-      <li> Doja Cat </li>
-    <ul style="list-style-type:circle; line-height:140%;">
-      <li> hiphop </li>
-      </ul>
     
-    </ol> 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <p> My music reccomendation </p>
+    <center><div class="wrapper">
+      <div class="A"> <img src="https://www.generasia.com/w/images/a/ae/BIBI_-_Gamyeonmudohoe_promo.jpg" style="height:100%;"> </div>
+      <div class="B"> <p> My favorite artists right now~</p> 
+    <ol style=" list-style-type:circle;
+line-height:120%;text-align: center;"> <li> Yerin Baek <br>kr&b </li><br>
+    <li> Bibi <br>kr&b, hiphop </li><br>
+      <li> Lyn Lapid<br> r&b, pop </li><br>
+      <li> Billie Eilish<br> pop </li>
+    </ol>  </div>
+      <div class="C">  <p> My current Obsessions <br>▶• ılıılıılıılıılıılı </p>
     <ul style="list-style-type:circle; line-height:140%;">
-    <li> Saftey Net by Ariana Grande </li>
-    <li> OMG by New Jeans </li>
-    <li> Sorry Not Sorry by Youngji </li> 
-      <li> ALL SONGS from Le Sserafim <3 </li> 
-      </ul>
-  <center>
-              <br><img src="https://cdn.inkistyle.com/wp-content/uploads/2023/01/NewJeans-OMG-MV-Fashion-758x426.jpg" style="width:600px;height:300px;">
-    
-</center>
-</body>
-</html> 
-  
+    <li> "What it is" - Doechii </li>
+    <li> "Diva" - Beyonce </li>
+    <li> "Tell me" - Fifty Fifty </li> 
+      <li> "Farewell, Neverland" - Tommorow X Together (TXT) </li>
+      <li> "In My Mind" - Lyn Lapid </li> 
+      </ul></div>
+      <div class="D">  <p> Reccomendation ᴺᴼᵂ ᴾᴸᴬᵞᴵᴺᴳ♫♬♪</p>
+    <ul style="list-style-type:circle; line-height:140%;">
+    <li> "Saftey Net" - Ariana Grande </li>
+    <li> "OMG" - New Jeans </li>
+    <li> "Sorry Not Sorry" - Youngji</li> 
+      <li> "Fedexx Girl" - Bibi </li> 
+        <li> "Binu" - Bibi </li> 
+      <li> "Travel" - Bolbbagan4 </li> 
+      </ul></div>
+      <div class="E"> <img src="https://cdn.inkistyle.com/wp-content/uploads/2023/01/NewJeans-OMG-MV-Fashion-758x426.jpg" style="width:100%;"></div>
+      <div class="F"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1P6A1dvmqJVPdvrW9oKsJM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+      
+      </div></center>
+  </body>
+  </html>
   
   <style>
-   nav {
+  nav {
   list-style-type: none;
-  background-color: #CF8BA9;
-  width: 100%;
   overflow: hidden;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
   top: 0;
   left: 0;
-  top: 0;
   margin: 0;
+  text-align:center;  
 }
 
 .navli {
-  display: inline;
-  float: right;
-  margin-left: 2%;
+  display: inline-block;
+}
+.active {
+  background-color: #6D889C;
 }
 
 .navli a {
@@ -71,36 +68,67 @@
   color: black;
   text-align: center;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 17px 17px;
 }
 
 .navli a:hover:not(.active) {
-  background-color: #EBD6E7;
+  background-color: #869CAC;
+  color: white;
 }
-.active {
-  background-color: #B15E6C;
+body{
+  background-color: #EBD2C2;
 }
-
-p, li {
-  font-size: large;
-  margin-left: 28%;
-}
-
-p {
+p, li{
   font-weight: bold;
-  }
-  
-    img {
-  border: dotted lightblue 8px;
-  
+   font-size: 140%;
+  color: black;
+} 
+div{
+  background-color:#D3C1D7;
+  border: dashed 2px antiquewhite;
+  border-radius: 10px;
+}
+.wrapper {
+  display: grid;
+  width: 70vw;
+   height: 50vw;
+  grid-template:
+    "A B" auto
+    "C D"
+    "E F";
+  grid-row-gap: 1%;
+  grid-column-gap: 1%;
 }
 
-img:hover {
-  border: dotted lightblue 12px;
+.A {
+  grid-area: 1/1/2/2;
+  height: 30vw;
 }
- 
-    body {
-  background-color: #DEE2FF;
-  margin: 0;
+.B{
+  grid-area: 1/2/2/3;
+}
+.C{
+  grid-area: 2/1/3/3;
+}/* row line / column line / end row / end column */
+
+.D {
+   grid-area: 3/1/4/3;
+}
+.E {
+   grid-area: 4/1/5/3;
+}
+.F {
+   grid-area: 5/1/6/3;
+}
+
+@media only screen and (max-width: 1224px) {
+  body{
+    background-color: #9EA3B0;
   }
+  .wrapper {
+       display: flex;
+       flex-direction: column;
+      width: 100%;
+  }
+}
     </style>
