@@ -19,7 +19,7 @@
     <li class="navli"><a href="placeofamusement/fairytale.html"> Amusement page</a></li>
   <li class="navli"><a href="store/yourdream.html"> Store page</a></li></center>
       </nav>
-  <br>
+  <br><br><br>
    
     <center>
       <br><br>
@@ -31,7 +31,7 @@
 </html>
 
 <style>
-  nav {
+nav {
   list-style-type: none;
   background-color: #E3BAC6;
   overflow: hidden;
@@ -54,6 +54,10 @@
   text-align: center;
   text-decoration: none;
   padding: 14px 17px;
+  animation-name: colornav;
+  animation-duration: 3s;
+ animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .navli a:hover:not(.active) {
@@ -76,5 +80,17 @@ h1 {
   text-shadow: 2px 2px 4px #B99BBF;
   font-style: oblique;
   font-size: 190%;
+}
+
+@keyframes colornav {
+  from {background-color:#E3BAC6;}
+  to {background-color: #D08BA0;}
+}
+
+@media only screen and (max-width: 1224px) {
+  @keyframes colornav {
+  from {background-color:#FDE8E9;}
+  to {background-color: #FAC7C9;}
+  }
 }
 </style>
